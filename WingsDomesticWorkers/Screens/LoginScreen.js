@@ -39,7 +39,7 @@ export default function LoginScreen() {
         </TouchableOpacity>
         <TouchableOpacity
           style={tw`w-full bg-blue-900 p-3 rounded-lg flex items-center justify-center mb-6`}
-          onPress={() => navigation.navigate('EmployerDashboard')}
+          onPress={() => navigation.navigate('MainTabs')}
         >
           <Text style={tw`text-gray-100 text-lg font-semibold`}>Sign in</Text>
         </TouchableOpacity>

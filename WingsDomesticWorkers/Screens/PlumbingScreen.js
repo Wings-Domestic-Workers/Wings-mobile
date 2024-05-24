@@ -17,6 +17,12 @@ const PlumbingScreen = () => {
           style={tw`w-full h-full`} 
           resizeMode="cover" 
         />
+        <TouchableOpacity 
+          style={tw`absolute top-5 right-6 bg-blue-500 p-3 rounded-full w-12`} 
+          onPress={() => navigation.navigate('Login')}
+        >
+          <Text style={tw`text-white`}>Skip</Text>
+        </TouchableOpacity>
       </View>
       <View style={tw`h-1/2 p-4 justify-center items-center bg-white`}>
       <Text style={tw`text-4xl font-bold text-center mb-4`}>
