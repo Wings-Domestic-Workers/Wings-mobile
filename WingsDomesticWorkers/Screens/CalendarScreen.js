@@ -82,6 +82,7 @@ const CalendarScreen = () => {
             agendaKnobColor: 'blue',
           }}
           style={tw`h-full`} // Ensure Agenda takes full height of its container
+          scrollEnabled={false} 
         />
       </View>
       <View style={tw`flex-1 p-4`}>

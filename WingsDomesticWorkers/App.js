@@ -34,6 +34,9 @@ import AllCarCleaners from './Screens/AllCarCleaners';
 import AllMaids from './Screens/AllMaids';
 import AllLoundrys from './Screens/AllLoundrys';
 import AllFarmWorkers from './Screens/AllFarmWorkers';
+import Profiles from './Screens/ProfilesScreen';
+import ErrorPage from './Screens/ErrorScreen';
+import PersonalScreen from './Screens/PersonalScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -58,7 +61,7 @@ function MainTabs() {
             case 'Inbox':
               iconName = 'mail-outline';
               break;
-            case 'Profile':
+            case 'Profiles':
               iconName = 'person-outline';
               break;
             default:
@@ -111,6 +114,9 @@ export default function App() {
           <Stack.Screen name="AllMaids" component={AllMaids} options={{ headerShown: false }} />
           <Stack.Screen name="AllLoundrys" component={AllLoundrys} options={{ headerShown: false }} />
           <Stack.Screen name="AllFarmWorkers" component={AllFarmWorkers} options={{ headerShown: false }} />
+          <Stack.Screen name="Profiles" component={Profiles} options={{ headerShown: false }} />
+          <Stack.Screen name="Error" component={ErrorPage} options={{ headerShown: false }} />
+          <Stack.Screen name="Personal" component={PersonalScreen} options={{ headerShown: false }} />
         </Stack.Navigator>
       </NavigationContainer>
     </TailwindProvider>

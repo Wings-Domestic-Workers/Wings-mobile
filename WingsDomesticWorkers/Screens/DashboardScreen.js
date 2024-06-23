@@ -209,7 +209,7 @@ const DashboardScreen = () => {
       <Text style={tw`text-xs md:text-sm text-gray-800 font-bold tracking-wide`}>
         Available Services
       </Text>
-      <Text style={tw`text-xs md:text-sm text-blue-800 font-bold tracking-wide`} onPress={() => navigation.navigate('Services')}>
+      <Text style={tw`text-xs md:text-sm text-blue-800 font-bold tracking-wide`} onPress={() => navigation.navigate('Personal')}>
         All Services
       </Text>
       </View>
